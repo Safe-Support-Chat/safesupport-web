@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 import introImage from "../images/intro.jpg"
 import chatboxImage from "../images/chatbox.jpg"
 import riotImage from "../images/riot.jpg"
-import nomadicLogo from "../images/nl-logo.png"
+import Footer from "../components/footer"
 
 const IndexPage = () => (
   <Layout>
@@ -81,17 +81,7 @@ const IndexPage = () => (
         <h2>Contact</h2>
       </header>
       <div className="content">
-        <p>If you have any questions, issues, or feedback please contact us at <a href="mailto:feedback@safesupport.chat">feedback@safesupport.chat</a></p>
-      </div>
-    </section>
-    <section id="footer">
-      <div className="content">
-        <footer>
-          <div className="d-flex">
-            Created by&nbsp;<a href="https://www.nomadiclabs.ca" target="_blank" rel="noopener noreferrer">Nomadic Labs</a>
-            <img src={nomadicLogo} alt="" className="logo" />
-          </div>
-        </footer>
+        <Footer />
       </div>
     </section>
   </Layout>

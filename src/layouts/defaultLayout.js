@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import nomadicLogo from "../images/nl-logo.png"
+import Footer from "../components/footer"
 import "../styles/layout.css"
 import "../styles/main.scss"
 
@@ -37,15 +37,9 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
       </div>
-      <footer>
-        <div className="d-flex">
-          Created by&nbsp;<a href="https://www.nomadiclabs.ca" target="_blank" rel="noopener noreferrer">Nomadic Labs</a>
-          <img src={nomadicLogo} alt="" className="logo" />
-        </div>
-        <div>
-          If you have any questions, issues, or feedback please contact us at <a href="mailto:feedback@safesupport.chat">feedback@safesupport.chat</a>
-        </div>
-      </footer>
+      <div className="alt-footer">
+        <Footer />
+      </div>
     </>
   )
 }

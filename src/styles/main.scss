@@ -43,16 +43,21 @@ body {
     z-index: -1;
   }
 
+}
 
-  #footer {
-    .content {
-      padding: 0;
+#footer {
+  .content {
+    padding: 0;
 
-      footer {
-        padding-left: 4rem;
-        padding-right: 4rem;
-      }
+    footer {
+      padding-left: 4rem;
+      padding-right: 4rem;
     }
+  }
+
+  p {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
   }
 }
 
@@ -168,6 +173,12 @@ main {
       }
     }
 
+    &:last-of-type {
+      .content {
+        padding-bottom: 5rem;
+      }
+    }
+
   }
 
   .iframe-container {
@@ -223,8 +234,6 @@ nav {
 }
 
 footer {
-  border-top: 1px solid $theme-light-color;
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -241,6 +250,25 @@ footer {
     margin: 0;
     margin-left: 0.4rem;
   }
+
+  .content {
+    padding: 0;
+
+    footer {
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+  }
+
+  p {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+}
+
+.alt-footer {
+  border-top: 1px solid $theme-light-color;
+  padding: 1rem;
 }
 
 .docs-page {
@@ -353,6 +381,12 @@ footer {
           padding-bottom: 2rem;
         }
       }
+
+      &:last-of-type {
+        .content {
+          padding-bottom: 3rem;
+        }
+      }
     }
 
     .align-btn {
@@ -363,6 +397,10 @@ footer {
   .docs-page {
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  .alt-footer {
+    padding-bottom: 4rem;
   }
 }
 
