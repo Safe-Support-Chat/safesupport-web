@@ -71,7 +71,7 @@ const IndexPage = () => (
           <li><Link to={'/customizing-your-account'}>Customizing your Account</Link></li>
           <li><Link to={'/encryption'}>Encryption</Link></li>
           <li><Link to={'/troubleshooting'}>Troubleshooting</Link></li>
-          <li><Link to={'/platoform-customization'}>Platform Customization (for Admin)</Link></li>
+          <li><Link to={'/platform-customization'}>Platform Customization (for Admin)</Link></li>
         </ul>
       </div>
     </section>
