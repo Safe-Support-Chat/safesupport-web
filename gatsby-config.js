@@ -2,7 +2,7 @@ module.exports = {
   pathPrefix: "/safesupport-web/",
   siteMetadata: {
     title: `Safe Support Chat`,
-    description: `A secure, private messaging platform with an embeddable chatbox created for the Ontario Coalition of Rape and Crisis Centres`,
+    description: `A secure, private messaging platform with an embeddable chatbox`,
     author: `Sharon Kennedy <sharon@nomadiclabs.ca>`,
   },
   plugins: [
