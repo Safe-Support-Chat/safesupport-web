@@ -22,7 +22,7 @@ export default function HTML(props) {
           dangerouslySetInnerHTML={{ __html: props.body }}
         />
         {props.postBodyComponents}
-        <script src={"https://unpkg.com/safesupport-chatbox"} type="text/javascript"></script>
+        <script src={"https://unpkg.com/private-safesupport-chatbox"} type="text/javascript"></script>
         <script src={ withPrefix("/js/main.js")} type="text/javascript"></script>
       </body>
     </html>
