@@ -10,6 +10,8 @@ var config = {
     exitMessage: 'The chat is closed. You may close this window.',
     chatUnavailableMessage: 'The chat service is not available right now. Please try again later.',
     anonymousDisplayName: 'Anonymous',
+    position: 'bottom right',
+    size: 'large',
 }
 
 EmbeddableChatbox.mount(config);
