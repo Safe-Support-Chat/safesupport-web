@@ -72,6 +72,7 @@ const IndexPage = () => (
           <li><Link to={'/encryption'}>Encryption</Link></li>
           <li><Link to={'/troubleshooting'}>Troubleshooting</Link></li>
           <li><Link to={'/platform-customization'}>Platform Customization (for Admin)</Link></li>
+          <li><Link to={'/sms-chat'}>SMS Chat</Link></li>
         </ul>
       </div>
     </section>
