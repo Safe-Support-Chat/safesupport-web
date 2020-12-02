@@ -247,7 +247,7 @@ main {
   #demo {
     /*background-color: $theme-color;*/
     /*color: $white;*/
-    padding: 4rem 5rem;
+    padding: 3rem 5rem;
 
     .image-slide {
       display: flex;
@@ -257,7 +257,7 @@ main {
 
       img {
         border-radius: 10px;
-        filter: drop-shadow(0 5px 10px $charcoal);
+        filter: drop-shadow(0 5px 7px $charcoal);
       }
     }
   }
@@ -407,6 +407,10 @@ footer {
       background-attachment: fixed;
     }
 
+    #demo. {
+      padding: 1rem;
+    }
+
     section {
       grid-template-areas:
         "header"
@@ -414,6 +418,7 @@ footer {
         "footer";
       grid-template-columns: 1fr;
       grid-template-rows: 3fr;
+      margin-top: 1rem;
       margin-bottom: 1rem;
 
       header {
@@ -465,6 +470,5 @@ footer {
     padding-bottom: 4rem;
   }
 }
-
 
 
