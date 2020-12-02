@@ -75,8 +75,8 @@ const IndexPage = () => (
         <h2>Acknowledgements</h2>
       </header>
       <div className="content">
-        <p>Safe Support Chat was developed and tested by a broad group of people committed to expanding access to sexual assault support including the core Project Team of PRIMAL GLOW Communications, Nomadic Labs and Brent Edwards Consulting.</p>
-        <p>The creation of Safe Support Chat has been funded through the “Using Technology to Better Support Survivors: Innovation in Frontline Settings” Innovation Fund Project through the Ministry of Community and Social Services, Office of Women’s Issues.</p>
+        <p>Safe Support Chat was developed and tested by a broad group of people committed to expanding access to sexual assault support including the core Project Team of <a href="https://primalglow.ca/">PRIMAL GLOW Communications</a>, <a href="https://www.nomadiclabs.ca/">Nomadic Labs</a> and Brent Edwards Consulting.</p>
+        <p>The creation of Safe Support Chat has been funded through the “Using Technology to Better Support Survivors: Innovation in Frontline Settings” Innovation Fund Project through the <a href="https://www.ontario.ca/page/womens-issues">Ministry of Community and Social Services, Office of Women’s Issues.</a></p>
       </div>
     </section>
 
