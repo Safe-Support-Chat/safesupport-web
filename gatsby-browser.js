@@ -6,11 +6,11 @@
 
 // You can delete this file if you're not using it
 
-export function onInitialClientRender() {
-  const el = document.querySelector('a#bookmarklet')
-  if (el) {
-    let bookmarklet = "var s= document.createElement('script'); s.setAttribute('src', 'https://unpkg.com/safesupport-chatbox@1.1.5/dist/bookmarklet.js'); s.setAttribute('crossorigin', 'anonymous'); document.body.appendChild(s);"
-    bookmarklet = '(function(){'+ bookmarklet +'})();'
-    el.setAttribute("href", "javascript:" + encodeURIComponent(bookmarklet));
-  }
-}
+// export function onInitialClientRender() {
+//   const el = document.querySelector('a#bookmarklet')
+//   if (el) {
+//     let bookmarklet = "var s= document.createElement('script'); s.setAttribute('src', 'https://unpkg.com/safesupport-chatbox@1.1.5/dist/bookmarklet.js'); s.setAttribute('crossorigin', 'anonymous'); document.body.appendChild(s);"
+//     bookmarklet = '(function(){'+ bookmarklet +'})();'
+//     el.setAttribute("href", "javascript:" + encodeURIComponent(bookmarklet));
+//   }
+// }

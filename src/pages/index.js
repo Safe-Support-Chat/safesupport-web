@@ -1,12 +1,28 @@
 import React from "react"
-import { Link } from "gatsby"
+import Slider from "react-slick";
 
 import Layout from "../layouts/homeLayout"
 import SEO from "../components/seo"
 import introImage from "../images/intro.jpg"
-import chatboxImage from "../images/chatbox.jpg"
-import riotImage from "../images/riot.jpg"
-import Footer from "../components/footer"
+import image1 from "../images/chatbox-screenshot.png"
+import image2 from "../images/sms-demo.png"
+import image3 from "../images/chatbox-demo.gif"
+import image4 from "../images/facilitator-chat.png"
+import image5 from "../images/facilitator-invites.png"
+import image6 from "../images/facilitator-sms-chat.png"
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+const settings = {
+  infinite: true,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  pauseOnFocus: true,
+};
 
 const IndexPage = () => (
   <Layout>
@@ -51,11 +67,11 @@ const IndexPage = () => (
       <div className="content">
         <ul>
           <li>
-            <h3>Anonymous and secure communication</h3>
-            <p>Using the open source, decentralized communication platform, <a href="https://matrix.org/">Matrix</a>, Safe Support Chat provides anonymous and end-to-end encrypted communication</p>
+            <h3>Private and secure communication</h3>
+            <p>Using the open source, decentralized communication platform, <a href="https://matrix.org/">Matrix</a>, Safe Support Chat provides anonymous and end-to-end encrypted communication.</p>
           </li>
           <li>
-            <h3>Data privacy</h3>
+            <h3>Data autonomy</h3>
             <p>Sexual assault centres maintain complete control over their own chat services and any data related to them.</p>
           </li>
           <li>
@@ -69,6 +85,46 @@ const IndexPage = () => (
         </ul>
       </div>
     </section>
+
+    <div id="demo">
+      <Slider {...settings}>
+        <div>
+          <div className="image-slide">
+            <img src={image1} alt="Screenshot of the embedded Safe Support chatbox" />
+          </div>
+        </div>
+
+        <div>
+          <div className="image-slide">
+            <img src={image2} alt="Mockup of an SMS chat conversation" />
+          </div>
+        </div>
+
+        <div>
+          <div className="image-slide">
+            <img src={image3} alt="Animated GIF of the embedded chatbox as a chat session is initiated" />
+          </div>
+        </div>
+
+        <div>
+          <div className="image-slide">
+            <img src={image4} alt="Screenshot of the facilitator's view of a chat session from the embedded chatbox" />
+          </div>
+        </div>
+
+        <div>
+          <div className="image-slide">
+            <img src={image5} alt="Screenshot of the facilitators' chat invitations" />
+          </div>
+        </div>
+
+        <div>
+          <div className="image-slide">
+            <img src={image6} alt="Screenshot of the facilitator's view of a chat session from SMS" />
+          </div>
+        </div>
+      </Slider>
+    </div>
 
     <section id="acknowledgements">
       <header>

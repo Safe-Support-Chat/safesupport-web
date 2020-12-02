@@ -33,6 +33,7 @@ const Layout = ({ children }) => {
           margin: `0 auto`,
           maxWidth: 960,
           padding: `0 2rem`,
+          minHeight: `calc(100vh - 63px - 72px)`
         }}
       >
         <main>{children}</main>

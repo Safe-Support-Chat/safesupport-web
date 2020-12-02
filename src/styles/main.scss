@@ -29,11 +29,13 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
+h2 {
+  font-size: 2em;
+}
+
 h3 {
-  font-size: 2rem;
   font-size: 1.2em;
   font-family: $theme-font;
-  color: $medium-purple;
   margin-top: 0.5rem;
   margin-bottom: 0.75rem;
 }
@@ -190,6 +192,32 @@ main {
       }
     }
 
+    &#features {
+      ul li {
+        padding-left: 0.5em;
+      }
+
+      li::marker {
+        font-size: 1.25em;
+      }
+
+      li:nth-child(1)::marker {
+        content: "😎";
+      }
+
+      li:nth-child(2)::marker {
+        content: "🔒";
+      }
+
+      li:nth-child(3)::marker {
+        content: "🔧";
+      }
+
+      li:nth-child(4)::marker {
+        content: "📱";
+      }
+    }
+
     &:last-of-type {
       .content {
         padding-bottom: 5rem;
@@ -216,6 +244,24 @@ main {
     }
   }
 
+  #demo {
+    /*background-color: $theme-color;*/
+    /*color: $white;*/
+    padding: 4rem 5rem;
+
+    .image-slide {
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      padding: 1rem;
+
+      img {
+        border-radius: 10px;
+        filter: drop-shadow(0 5px 10px $charcoal);
+      }
+    }
+  }
+
 }
 
 nav {
@@ -224,7 +270,6 @@ nav {
   justify-content: space-between;
   padding: 1rem;
   border-bottom: 1px solid $theme-light-color;
-  margin-bottom: 2rem;
 
   .logo a {
     font-weight: 700;
@@ -337,30 +382,6 @@ footer {
 
 .d-flex {
   display: flex;
-}
-
-ul li {
-  padding-right: 0.5em;
-}
-
-li::marker {
-  font-size: 1.25em;
-}
-
-li:nth-child(1)::marker {
-  content: "😎";
-}
-
-li:nth-child(2)::marker {
-  content: "🔒";
-}
-
-li:nth-child(3)::marker {
-  content: "🔧";
-}
-
-li:nth-child(4)::marker {
-  content: "📱";
 }
 
 @media screen and (max-width: 992px) {
