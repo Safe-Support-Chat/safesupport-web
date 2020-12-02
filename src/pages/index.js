@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import Layout from "../layouts/homeLayout"
 import SEO from "../components/seo"
 import introImage from "../images/intro.jpg"
+import logo from "../images/ocrcc-logo.jpg"
 import image1 from "../images/chatbox-screenshot.png"
 import image2 from "../images/sms-demo.png"
 import image3 from "../images/chatbox-demo.gif"
@@ -73,6 +74,7 @@ const IndexPage = () => (
           sexual assault centres, this real time messaging chat service offers secure online
           support to survivors of sexual violence and harassment.
         </p>
+        <img src={logo} alt="OCRCC Logo" />
       </div>
     </section>
 
