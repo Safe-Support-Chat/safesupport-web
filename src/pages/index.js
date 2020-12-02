@@ -14,10 +14,7 @@ const IndexPage = () => (
     <section id="intro">
       <header>
         <h1>Safe Support Chat</h1>
-        <p>A secure and private chat service</p>
-        <div className="align-btn">
-          <Link to="getting-started" className="btn">Starter Guide</Link>
-        </div>
+        <p>A secure and private chat service created for the Ontario Coalition of Rape Crisis Centres</p>
       </header>
       <div className="content">
         <div className="image">
@@ -27,53 +24,59 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <section id="platform">
+    <section id="about">
       <header>
-        <h2>Messaging Platform</h2>
+        <h2>About</h2>
       </header>
       <div className="content">
-        <p><strong>Safe Support Chat</strong> is a chat app that crisis centres use to respond to online real-time support requests.</p>
-        <p>The messaging platform is built using the <a href="https://matrix.org/" target="_blank" rel="noopener noreferrer">Matrix protocol</a> for secure, decentalized, instant messaging. The main messaging platform is a custom implementation of the <a href="https://about.riot.im/" target="_blank" rel="noopener noreferrer">Riot chat app</a>. It is a fully featured chat app that can be white-labelled for the host organization.</p>
-        <div className="image">
-          <img src={riotImage} alt="Screenshot of the messaging platform for facilitators" />
-        </div>
+        <h3>Secure online support for survivors of sexual violence</h3>
+        <p>
+          Safe Support Chat is a private chat and text app designed specifically for the {' '}
+          <a href="https://sexualassaultsupport.ca/">
+            Ontario Coalition of Rape Crisis Centres (OCRCC)
+          </a>{' '}and their 30 member centres.
+        </p>
+        <p>
+          Informed by support seekers and frontline workers from
+          sexual assault centres, this real time messaging chat service offers secure online
+          support to survivors of sexual violence and harassment.
+        </p>
       </div>
     </section>
 
-    <section id="chatbox">
+    <section id="features">
       <header>
-        <h2>Embeddable Chatbox</h2>
+        <h2>Features</h2>
       </header>
       <div className="content">
-        <p><strong>The embeddable chatbox</strong> is what support seekers use to access the crisis centre's services via chat from the centre's website.</p>
-        <p>The chatbox is anonymous, private, and secure. It uses end-to-end encryption when available and does not collect or save any data about the support seeker or the conversation.</p>
-        <div className="image sm">
-          <img src={chatboxImage} alt="Screenshot of the embedded chatbox with a short text conversation in the chat window" />
-        </div>
-        <p><strong>A bookmarklet</strong> is a special link that you can bookmark which will then add the chatbox to any website when clicked. To use it, make sure your bookmarks bar is visible, then drag the link below to your bookmarks bar. Then go to a new page and click on the bookmark. You should see the chatbox appear on the page.</p>
-        <p><a id="bookmarklet" className="btn">Bookmarklet</a></p>
-      </div>
-    </section>
-
-    <section id="docs">
-      <header>
-        <h2>Starter Guide & User Manual</h2>
-      </header>
-      <div className="content">
-        <p>We have developed a <strong>Starter Guide</strong> presentation for crisis centre staff and volunteers using the Safe Support Chat.</p>
-        <div className="iframe-container">
-          <iframe title="Safe Support Chat Starter Guide" src="https://docs.google.com/presentation/d/e/2PACX-1vR-ZRIZFhgPsipxzEjkNEv6AvvmiOay9EtcpxhrSE64TCr7aBuQ7rnyYNboh-mcaQsdPtHTffATXI9A/embed?start=false&loop=false&delayms=5000" frameBorder="0" width="480" height="299" allowFullScreen={true} mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-        </div>
-        <p>For reference, the information in the Starter Guide comes from the user manual, which is accessible on this website. The table of contents is below:</p>
         <ul>
-          <li><Link to={'/getting-started'}>Getting Started</Link></li>
-          <li><Link to={'/using-the-support-chat'}>Using the Support Chat</Link></li>
-          <li><Link to={'/customizing-your-account'}>Customizing your Account</Link></li>
-          <li><Link to={'/encryption'}>Encryption</Link></li>
-          <li><Link to={'/troubleshooting'}>Troubleshooting</Link></li>
-          <li><Link to={'/platform-customization'}>Platform Customization (for Admin)</Link></li>
-          <li><Link to={'/sms-chat'}>SMS Chat</Link></li>
+          <li>
+            <h3>Anonymous and secure communication</h3>
+            <p>Using the open source, decentralized communication platform, <a href="https://matrix.org/">Matrix</a>, Safe Support Chat provides anonymous and end-to-end encrypted communication</p>
+          </li>
+          <li>
+            <h3>Data privacy</h3>
+            <p>Sexual assault centres maintain complete control over their own chat services and any data related to them.</p>
+          </li>
+          <li>
+            <h3>Highly customizeable</h3>
+            <p>Centres can configure many aspects of the chat service according to their preferences, such as the automated messaging, appearance, and availability schedule.</p>
+          </li>
+          <li>
+            <h3>Accessible via web or SMS</h3>
+            <p>Survivors can access the chat support service through an embedded chatbox on the sexual assault centre's website or via SMS messaging.</p>
+          </li>
         </ul>
+      </div>
+    </section>
+
+    <section id="acknowledgements">
+      <header>
+        <h2>Acknowledgements</h2>
+      </header>
+      <div className="content">
+        <p>Safe Support Chat was developed and tested by a broad group of people committed to expanding access to sexual assault support including the core Project Team of PRIMAL GLOW Communications, Nomadic Labs and Brent Edwards Consulting.</p>
+        <p>The creation of Safe Support Chat has been funded through the “Using Technology to Better Support Survivors: Innovation in Frontline Settings” Innovation Fund Project through the Ministry of Community and Social Services, Office of Women’s Issues.</p>
       </div>
     </section>
 
@@ -82,7 +85,7 @@ const IndexPage = () => (
         <h2>Contact</h2>
       </header>
       <div className="content">
-        <Footer />
+        <p>If you have any questions, issues, or feedback please contact us at <a href="mailto:feedback@safesupport.chat">feedback@safesupport.chat</a></p>
       </div>
     </section>
   </Layout>

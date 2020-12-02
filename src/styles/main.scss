@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Assistant&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
 $purple: #785BEC;
 $light-purple: #ebe6fc;
@@ -13,13 +13,29 @@ $white: #ffffff;
 $highlight-color: $yellow;
 $theme-color: $purple;
 $theme-light-color: $light-purple;
-$theme-font: 'Assistant', 'Helvetica', sans-serif;
+$theme-font: 'Assistant', 'Helvetica', 'Arial', sans-serif;
+$header-font: 'Roboto', 'Helvetica', 'Arial', sans-serif;
 $theme-highlight-color: $medium-purple;
 
 body {
-  font-family: 'Assistant', 'Helvetica', 'Arial', sans-serif;
+  font-family: $theme-font;
+  font-weight: 400;
   word-wrap: normal;
   background: $white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-font;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 2rem;
+  font-size: 1.2em;
+  font-family: $theme-font;
+  color: $medium-purple;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .home-page {
@@ -72,6 +88,7 @@ a {
 
 p {
   margin-top: 0.25rem;
+  margin-bottom: 0.5em;
 }
 
 main {
@@ -143,8 +160,8 @@ main {
         }
 
         p {
-          font-family: "Assistant", Helvetica, sans-serif;
-          font-weight: bold;
+          font-family: $theme-font;
+          font-weight: 700;
           font-size: 1.2em;
           line-height: 1.8;
         }
@@ -210,7 +227,7 @@ nav {
   margin-bottom: 2rem;
 
   .logo a {
-    font-weight: bold;
+    font-weight: 700;
   }
 
   > div {
@@ -281,7 +298,7 @@ footer {
   padding: 0.25rem 0.5rem;
   font-size: inherit;
   color: inherit;
-  font-weight: bold;
+  font-weight: 700;
   font-family: $theme-font;
   cursor: pointer;
   display: flex;
@@ -322,7 +339,31 @@ footer {
   display: flex;
 }
 
-@media screen and (max-width: 1230px) {
+ul li {
+  padding-right: 0.5em;
+}
+
+li::marker {
+  font-size: 1.25em;
+}
+
+li:nth-child(1)::marker {
+  content: "😎";
+}
+
+li:nth-child(2)::marker {
+  content: "🔒";
+}
+
+li:nth-child(3)::marker {
+  content: "🔧";
+}
+
+li:nth-child(4)::marker {
+  content: "📱";
+}
+
+@media screen and (max-width: 992px) {
 
   .hide-on-mobile {
     display: none;
