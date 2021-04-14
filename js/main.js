@@ -1,6 +1,6 @@
 
 var config = {
-  matrixServerUrl: 'https://matrix.safesupport.chat'
+  matrixServerUrl: 'https://chatapp.safesupport.chat'
 }
 
 EmbeddableChatbox.mount(config);
