@@ -43,9 +43,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nomadic-labs/safesupport-web"
+    "url": "https://github.com/Safe-Support-Chat/safesupport-web"
   },
   "bugs": {
-    "url": "https://github.com/nomadic-labs/ocrcc-chatbox/issues"
+    "url": "https://github.com/Safe-Support-Chat/ocrcc-chatbox/issues"
   }
 }
